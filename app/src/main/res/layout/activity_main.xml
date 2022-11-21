@@ -9,6 +9,48 @@
 
 
     <TextView
+        android:id="@+id/description"
+        android:layout_width="267dp"
+        android:layout_height="46dp"
+        android:text="Temperatura"
+        android:textColor="@color/sun"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="267dp"
+        android:layout_height="46dp"
+        android:text="Temperatura"
+        android:textColor="@color/sun"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
+        android:id="@+id/humitity"
+        android:layout_width="267dp"
+        android:layout_height="46dp"
+        android:text="Humidade"
+        android:textColor="@color/sun"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
         android:id="@+id/textview"
         android:layout_width="267dp"
         android:layout_height="46dp"
@@ -16,10 +58,11 @@
         android:textColor="@color/sun"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintBottom_toTopOf="@+id/temperature"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
 
     <Spinner
         android:id="@+id/spinner1"
