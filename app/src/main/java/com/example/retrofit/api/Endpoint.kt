@@ -7,5 +7,5 @@ import retrofit2.http.Query
 
 interface Endpoint {
     @GET("weather")
-    fun getWeather(@Query("cityId") cityId: Int): Call<ResponseWeather>;
+    fun getWeather(@Query("woeid") cityId: Int): Call<ResponseWeather>;
 }

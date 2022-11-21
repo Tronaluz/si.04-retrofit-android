@@ -35,8 +35,7 @@ class MainActivity : AppCompatActivity() {
         citiesMap.put(1, 455918)
         citiesMap.put(2, 455883)
         citiesMap.put(3, 456227)
-
-        var citys = arrayOf(" ","Umuarama", "Maringá", "Icaraíma", "Havana")
+        var citys = arrayOf(" ","Umuarama", "Maringá", "Icaraíma")
         var spinner = findViewById<Spinner>(R.id.spinner1)
         spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, citys)
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
@@ -47,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 Log.i("API", position.toString());
                 var cityId = citiesMap.get(position)
+                Log.i("API", cityId.toString())
                 if (cityId != null) {
                     getData(cityId)
                 }
@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onResponse(call: Call<ResponseWeather>, response: Response<ResponseWeather>) {
+                Log.i("API", response.body()?.result?.cityName.toString());
                 var data = response.body()?.result
                 var temperature = data?.temp
                 var description = data?.description
