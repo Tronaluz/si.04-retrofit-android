@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Retrofit</string>
+    <string name="previs_o_do_tempo">Previsão do Tempo</string>
+    <string name="conferir">CONFERIR</string>
 </resources>

@@ -5,7 +5,7 @@
         android:startColor="@color/blue_lagon"
         android:centerColor="@color/green_day"
         android:endColor="@color/sun"
-        android:angle="50"
+        android:angle="135"
         />
 
 </shape>
