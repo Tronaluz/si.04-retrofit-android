@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main);
         texto = findViewById(R.id.textview)
         seletor = findViewById(R.id.spinner1)
-        botao = findViewById(R.id.butoon)
         var citiesMap = HashMap<Int, Int>()
         citiesMap.put(1, 455918)
         citiesMap.put(2, 455883)
